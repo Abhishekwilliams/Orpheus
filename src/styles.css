@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+.custom-snackbar {
+    background-color: #265556; /* Blue background color */
+    color: white; /* White text color */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+  }
+@font-face {
+    font-family: 'myfont1';
+    src: url('./assets/fonts/Freight Big Pro Bold.otf') format('opentype');
+  }
+
+@font-face {
+    font-family: 'myfont2';
+    src: url('./assets/fonts/Freight Big Pro Semibold.otf') format('opentype');
+  }  
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,30 @@
+.dialog-content {
+    max-width: 500px;
+  }
+  
+  .editable-field {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  
+  .post-content textarea {
+    height: 150px;
+  }
+  
+  .button-container {
+    text-align: right;
+    margin-top: 16px;
+  }
+  
+  .create-button {
+    margin-right: 8px;
+    background-color:  #265556;
+  }
+  
+  .cancel-button {
+    margin-left: 8px;
+    background-color: 	#b23b3b
+    
+  }

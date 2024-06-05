@@ -1,0 +1,43 @@
+.footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  margin: 0px;
+  /* background-color: #142d2df5; */
+  color: white;
+  justify-content: center;
+  /* display: flex; */
+  /* justify-content:  center; Align content at the ends */
+  /* align-items: center; */
+  
+   /* Adjust padding as needed */
+  /* flex-wrap: wrap; Allow items to wrap to the next line */
+}
+
+.footer-content {
+  background-color: #142d2df0;
+  display: flex; /* Display logos in a row */
+  justify-content: center;
+}
+
+.logo {
+  width: 20px; /* Adjust the width as needed */
+  height: 20px; /* Maintain aspect ratio */
+  margin: 10px; /* Add margin for spacing */
+  /* filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.6)); */
+   /* Add glow effect */
+}
+.container1 {
+  text-align: center;
+  background-color: #142d2d;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* .footer-text { */
+  /* font-size: 14px; Adjust font size as needed */
+  /* margin-top: 10px; Add margin to separate from the logos */
+  /* width: 100%; Ensure full width */
+  /* text-align: center; Center-align text */
+/* } */

@@ -1,0 +1,149 @@
+mat-toolbar {
+    background-color: #142d2d; /* Change background color */
+    color: white; /* Change text color */
+  }
+  .custom-color {
+    background-color: #C3D4D4; /* Custom background color */
+    color: white; /* Text color */
+    width: 40px; /* Adjust the width and height as needed */
+    height: 40px;
+    border-radius: 20%; /* Makes the button circular */
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  /* Styling the toolbar row */
+  .mat-toolbar-row {
+    justify-content: center; /* Align items horizontally */
+    align-items: center; /* Align items vertically */
+  }
+  
+  /* Styling the button inside the toolbar */
+  .mat-toolbar-row button {
+    color: white; /* Change button text color */
+  }
+  
+  /* Styling the button icon */
+  .mat-toolbar-row .mat-icon {
+    font-size: 24px; /* Change icon size */
+  }
+  
+  /* Hover effect on the button */
+  .mat-toolbar-row button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Change background color on hover */
+  }
+
+  .centered-row {
+    display: flex;
+    justify-content: right; /* Align content horizontally */
+    align-items: center; /* Align content vertically */
+    flex-grow: 1; /* Allow the span to grow to fill available space */
+    font-family: 'myfont1', sans-serif;
+  }
+  .animated-button.circular-button {
+    width: 40px; /* Adjust the size as needed */
+    height: 40px; /* Adjust the size as needed */
+    border-radius: 50%; /* Make it circular */
+    background-color: transparent; /* Transparent background */
+    padding: 0; /* Remove padding */
+    border: none; /* Remove border */
+    overflow: hidden; /* Hide overflow content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animated-button.circular-button img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+/* Shake Animation */
+.click-shake {
+    background: #f6f8f8;
+}
+
+.click-shake:active {
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-5px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(5px);
+    }
+}
+
+/* .example-sidenav-content { */
+  /* overflow: auto; or overflow-y: auto; */
+  /* height: 100%; */
+/* } */
+.example-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden; /* Ensure no scrollbars initially */
+}
+
+.example-sidenav {
+  flex: 0 0 auto; /* Fix width for mat-drawer */
+  overflow-y: auto; /* Enable vertical scrolling for mat-drawer */
+  background-color: #a8bbbb; 
+  text-align: center;
+}
+
+.example-sidenav-content {
+  flex: 1; /* Allow mat-content to occupy remaining space */
+  overflow-y: auto; /* Enable vertical scrolling for mat-content */
+}
+.nav-link {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  /* align-items: center; */
+  /* justify-content: flex-start; */
+  /* width: 100%; */
+  margin-bottom: 10px; 
+  /* color: white; */
+  text-shadow: 0 0 20px #ffffff;
+}
+
+.nav-link:hover {
+  background-color: #265556; /* Change background color on hover */
+  transform: scale(1.2); /* Zoom effect on hover */
+}
+.nav-icon {
+  margin-right: 10px; /* Adjust the spacing between icon and text */
+  transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+}
+
+.spacer {
+  flex: 1;
+}
+.column-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.nav-button {
+  width: 100%;
+  font-size: large;
+ 
+ 
+}
+
+.nav-link {
+  color: white;
+  text-shadow: 0 0 20px #ffffff;
+}
+/* h1{
+  font-family: 'myfont2', sans-serif;
+} */
+

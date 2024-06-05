@@ -1,0 +1,41 @@
+.container1 {
+    /* Apply background color */
+    background-color: #c3d4d4;
+    /* Apply padding */
+    padding: 20px;
+    height: 100vh;
+  }
+  
+  .form-container {
+    /* Apply padding */
+    padding: 20px;
+    /* Apply border radius */
+    border-radius: 10px;
+    /* Apply background color */
+    background-color: white;
+    /* Apply box shadow */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .form-container h1 {
+    /* Center align heading */
+    text-align: center;
+  }
+  
+  .form-container form {
+    /* Apply grid layout */
+    display: grid;
+    /* Define gap between grid items */
+    grid-gap: 20px;
+  }
+  
+  /* Apply width to mat-form-field */
+  .mat-form-field {
+    width: 100%;
+  }
+  
+  /* Apply width to submit button */
+  button[type="submit"] {
+    width: 100%;
+    padding: 25px
+  }

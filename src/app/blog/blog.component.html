@@ -1,0 +1,19 @@
+<div class="container2">
+    <section class="blog-container" style="margin-top: 10px; margin-bottom: 0px;">
+      <div class="blog-content">
+        <button mat-raised-button class="create-new-blog-button" (click)="createNewBlog()"style="color: white; background-color:#b23b3b ;  ">
+            <mat-icon>add</mat-icon>
+            ADD
+        </button>
+        <div style="padding: 4px;"></div>
+        <!-- Individual blog posts -->
+        <div class="blog-post" *ngFor="let post of blogPosts">
+          <h2>{{ post.title }}</h2>
+          <p class="post-meta">Posted on <span>{{ formatDate(post.created_at) }}</span> by <span>{{ post.author }}</span></p>
+          <p class="post-excerpt">{{ post.content.length > 350 ? post.content.substring(0, 350) + '......' : post.content }}</p>
+          <!-- Call openDialog() method on button click -->
+          <button (click)="openDialog(post.id)" class="read-more-btn">Read More</button>
+        </div>
+      </div>
+    </section>
+  </div>

@@ -1,0 +1,76 @@
+/* blog.component.css */
+
+.container2{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content:right;
+    align-items: right; 
+    /* height: 100%; */
+    background-image: url('https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg');
+    background-size: cover;
+    padding: 70px;
+    
+  }
+  .blog-container {
+      flex: 1;
+      /* display: flex; */
+      justify-content: right;
+      /* max-width: 1200px; */
+      margin: 0 auto;
+      
+    }
+    
+    .blog-content {
+      /* width: 70%; */
+    }
+    
+    .blog-post {
+      background-color: rgba(255, 255, 255, 0.7); /* Glass-like effect */
+      padding: 10px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+      
+      
+    }
+    
+    .blog-post h2 {
+      font-size: 30px;
+      /* text-align: le; */
+      font-family: 'myfont1', sans-serif;
+      margin-bottom: 20px;
+    }
+    
+    .post-meta {
+      font-size: 14px;
+      color: #666;
+    }
+    
+    .post-meta span {
+      font-weight: bold;
+      color: #333;
+    }
+    
+    .post-excerpt {
+      margin-top: 10px;
+      color: #333;
+    }
+    
+    .read-more-btn {
+      display: inline-block;
+      padding: 8px 16px;
+      background-color: #007bff;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+    
+    .read-more-btn:hover {
+      background-color: #0056b3;
+    }
+    
+    /* .sidebar {
+      width: 25%;
+      
+    } */

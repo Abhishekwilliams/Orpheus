@@ -1,0 +1,16 @@
+<mat-dialog-content class="dialog-content">
+    <h2>
+      <input type="text" [(ngModel)]="title" placeholder="Title" class="editable-field">
+    </h2>
+    <p class="post-content">
+      <textarea [(ngModel)]="content" placeholder="Content" class="editable-field"></textarea>
+    </p>
+    <div class="post-details">
+      <p><strong>Author:</strong> <input type="text" [(ngModel)]="author" placeholder="Author"></p>
+      <p><strong>Posted on:</strong> {{ created_at }}</p>
+    </div>
+    <div class="button-container">
+      <button mat-raised-button color="primary" (click)="createPost()" class="create-button">Create Post</button>
+      <button mat-raised-button color="warn" (click)="dialogRef.close()" class="cancel-button">Cancel</button>
+    </div>
+  </mat-dialog-content>
