@@ -23,7 +23,7 @@ export class BlogComponent implements OnInit{
   fetchBlogPosts() {
     // Make HTTP request to fetch blog posts
     // Replace 'http://your-django-backend/api/blog/' with the actual URL of your Django backend API endpoint
-    this.http.get<any[]>('http://127.0.0.1:8000/myapi/blog/')
+    this.http.get<any[]>('https://web-production-38d2f.up.railway.app/myapi/blog/')
       .subscribe(blogPosts => {
         this.blogPosts = blogPosts;
       });
