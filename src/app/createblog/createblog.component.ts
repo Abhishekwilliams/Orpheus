@@ -28,7 +28,7 @@ export class CreateblogComponent {
       created_at: this.created_at
     };
 
-    this.http.post('http://127.0.0.1:8000/myapi/blog/', postData)
+    this.http.post('https://web-production-38d2f.up.railway.app/myapi/blog/', postData)
       .subscribe((response) => {
         console.log('Post created successfully:', response);
         this.dialogRef.close();

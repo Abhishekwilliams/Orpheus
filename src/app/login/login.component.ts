@@ -25,7 +25,7 @@ export class LoginComponent implements OnInit {
       const email = formData.username; 
 
       // Make HTTP POST request to your backend endpoint
-      this.http.post<any>('http://127.0.0.1:8000/myapi/login/', formData).subscribe(
+      this.http.post<any>('https://web-production-38d2f.up.railway.app/myapi/login/', formData).subscribe(
         response => {
           console.log('Login successful:', response);
           // Redirect to dashboard or any other page after successful login

@@ -22,7 +22,7 @@ export class BlogDetailComponent {
   fetchPostContent(postId: number) {
     // Make HTTP request to fetch the full content of the blog post based on postId
     // Replace 'http://your-django-backend/api/blog/' with the actual URL of your Django backend API endpoint
-    this.http.get<any>('http://127.0.0.1:8000/myapi/blog/' + postId + '/')
+    this.http.get<any>('https://web-production-38d2f.up.railway.app/myapi/blog/' + postId + '/')
       .subscribe(post => {
         this.postContent = post.content;
         this.postId = post.id;
@@ -42,7 +42,7 @@ export class BlogDetailComponent {
   };
 
   // Make an HTTP PUT request to update the post
-  this.http.put<any>('http://127.0.0.1:8000/myapi/blog/' + this.postId + '/', editedPostData)
+  this.http.put<any>('https://web-production-38d2f.up.railway.app/myapi/blog/' + this.postId + '/', editedPostData)
     .subscribe(updatedPost => {
       // If the update is successful, you might want to perform some action
       console.log('Post updated successfully:', updatedPost);
@@ -70,7 +70,7 @@ export class BlogDetailComponent {
     // Implement delete post functionality here
     // Make an HTTP DELETE request to delete the post
     // Replace 'http://your-django-backend/api/blog/' with the actual URL of your Django backend API endpoint
-    this.http.delete<any>('http://127.0.0.1:8000/myapi/blog/' + this.postId + "/")
+    this.http.delete<any>('https://web-production-38d2f.up.railway.app/myapi/blog/' + this.postId + "/")
       .subscribe(() => {
         // If the deletion is successful, you might want to perform some action
         console.log('Post deleted successfully.');

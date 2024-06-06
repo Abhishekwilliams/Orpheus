@@ -25,7 +25,7 @@ export class SignupComponent implements OnInit{
     if (this.signupForm.valid) {
       const formData = this.signupForm.value;
       // Make HTTP POST request to your backend endpoint
-      this.http.post<any>('http://127.0.0.1:8000/myapi/signup/', formData).subscribe(
+      this.http.post<any>('https://web-production-38d2f.up.railway.app/myapi/signup/', formData).subscribe(
         response => {
           console.log('Form submitted successfully!', response);
           // Handle successful submission here

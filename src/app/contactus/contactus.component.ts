@@ -25,7 +25,7 @@ export class ContactusComponent implements OnInit{
     if (this.contactForm.valid) {
       const formData = this.contactForm.value;
       // Make HTTP POST request to your backend endpoint
-      this.http.post<any>('http://127.0.0.1:8000/myapi/send-email/', formData).subscribe(
+      this.http.post<any>('https://web-production-38d2f.up.railway.app/myapi/send-email/', formData).subscribe(
         response => {
           console.log('Form submitted successfully!', response);
           // Display snackbar message
