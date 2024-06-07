@@ -31,6 +31,7 @@ import { BlogComponent } from './blog/blog.component';
 import { BlogDetailComponent } from './blog-detail/blog-detail.component';
 import { CreateblogComponent } from './createblog/createblog.component';
 import { PaymentComponent } from './payment/payment.component';
+import { PaymentService } from './services/payment.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -67,7 +68,8 @@ import { PaymentComponent } from './payment/payment.component';
   ],
   providers: [
     provideAnimationsAsync(),
-    DatePipe
+    DatePipe,
+    PaymentService
   ],
   bootstrap: [AppComponent]
 })

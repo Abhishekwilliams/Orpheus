@@ -1,1 +1,23 @@
-<p>payment works!</p>
+<div class="container1">
+    <div class="form-container">
+      <h1>Payment</h1>
+      <form (submit)="makePayment($event)">
+        <mat-form-field appearance="fill">
+          <mat-label>Name</mat-label>
+          <input matInput type="text" [(ngModel)]="paymentDetails.name" name="name" required>
+        </mat-form-field>
+  
+        <mat-form-field appearance="fill">
+          <mat-label>Email</mat-label>
+          <input matInput type="email" [(ngModel)]="paymentDetails.email" name="email" required>
+        </mat-form-field>
+  
+        <mat-form-field appearance="fill">
+          <mat-label>Amount</mat-label>
+          <input matInput type="number" [(ngModel)]="paymentDetails.amount" name="amount" required>
+        </mat-form-field>
+  
+        <button mat-raised-button color="primary" type="submit" [disabled]="!paymentDetails.amount || !paymentDetails.email || !paymentDetails.name" [ngStyle]="{ 'background-color': (paymentDetails.amount && paymentDetails.email && paymentDetails.name) ? '#265556' : '#ccc' }">Pay with Razorpay</button>
+      </form>
+    </div>
+  </div>
