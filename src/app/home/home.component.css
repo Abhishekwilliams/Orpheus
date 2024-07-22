@@ -51,11 +51,11 @@
   
 }
 .example-header-image1 {
-  background-image: url('../../assets/images/dp.png');
+  background-image: url('../../assets/images/person-female-svgrepo-com.svg');
   background-size: cover;
 }
 .example-header-image2 {
-  background-image: url('../../assets/images/dp2.png');
+  background-image: url('../../assets/images/person-male-svgrepo-com.svg');
   background-size: cover;
 }
 .example-card-container {
