@@ -1,4 +1,4 @@
-<div class="container1">
+<!-- <div class="container1">
     <div class="form-container">
       <h1>Payment</h1>
       <form (submit)="makePayment($event)">
@@ -20,4 +20,12 @@
         <button mat-raised-button color="primary" type="submit" [disabled]="!paymentDetails.amount || !paymentDetails.email || !paymentDetails.name" [ngStyle]="{ 'background-color': (paymentDetails.amount && paymentDetails.email && paymentDetails.name) ? '#265556' : '#ccc' }">Pay with Razorpay</button>
       </form>
     </div>
-  </div>
+  </div> -->
+  
+    <iframe
+      src="https://pages.razorpay.com/pl_OZbTRhtPGi1s49/view"
+      width="100%"
+      height="100Vh"
+      frameborder="0"
+      allowfullscreen>
+    </iframe>
